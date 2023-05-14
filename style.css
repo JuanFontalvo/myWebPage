@@ -8,6 +8,7 @@ html, body {
     margin: 0px;
     width: 100%;
     height: 100%;
+    font-size: 16px;
     overflow-x:hidden;
 }
 
@@ -35,119 +36,132 @@ body {
     margin: 30px;
     width: 100%;
     height: 210px;
+    padding: 5%;
+    font-size: 5vw;
 }
 
 .headerRedes {
     display: flex;
     position: absolute;
-    right: 10%;
+    right: 20%;
+    top: 0px;
 }
 
 .headerRedes * {
-    width: 50px;
-    margin: 0 15px 0 15px;
+    width: calc(35px + 2vw);
+    margin: 0 10px 0 10px;
 }
 
 #headerRedesLi:hover {
-    width: 60px;
-    margin: -5px 10px 0 10px;
+    box-shadow: 0 0px 20px rgb(25, 135, 179);
+    border-radius: 15%;
+    transition: all 0.2s ease;
 }
 
 #headerRedesGh:hover {
-    width: 60px;
-    margin: -5px 10px 0 10px;
+    box-shadow: 0 0px 20px rgb(82, 75, 180);
+    border-radius: 50%;
+    transition: all 0.2s ease;
 }
 
 #headerRedesTw:hover {
-    width: 60px;
-    margin: -5px 10px 0 10px;
+    box-shadow: 0 0px 20px rgb(0, 195, 255);
+    border-radius: 10%;
+    transition: all 0.2s ease;
 }
 
-.backgroundName {
+.textHeader {
     position: absolute;
     background-color:#ffffff60;
     box-shadow:  10px 10px 0px #77777750;
-    width: 65%;
-    height: 60px;
-    margin-top: 75px;
-    left: 170px;
-    border-radius: 30px;
+    width: 70%;
+    height: 16%;
+    left: 10%;
+    transform: translateY(3vh);
+    border-radius: 10vh;
     z-index: 0;
 }
 .imagePerfil {
     position: absolute;
-    left: 0px;
+    left: 0%;
+    top: 0%;
     float: left;
-    width: 200px;
-    height: 200px;
+    width: 21vw;
+    height: auto;
+    max-width: 300px;
     object-fit: cover;
-    border-radius: 100px;
+    border-radius: 50%;
     border: 6px solid #77777760;
     z-index: 1;
 }
 
 .imagePerfil:hover {
-    width: 220px;
-    height: 220px;
-    left: -10px;
-    top: -10px;
-    border-radius: 110px;
+    width: 22%;
+    height: auto;
+    left: -1%;
+    top: -1.25vh;
+    border-radius: 50%;
 }
 
 .headerContainer h1 {
     position: absolute;
-    width: 580px;
     font-weight:bold;
-    font-size: 24px;
+    font-size: 0.6em;
     color: rgb(0, 0, 0);
-    top: 65px;
-    left: 100px;
-}
-
-.headerContainer h2 {
-    position: absolute;
-    width: 460px;
-    font-weight: 400;
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    top: 90px;
-    left: 100px;
+    left: 20%;
+    line-height: 0.5vh;
+    text-align: center;
 }
 
 .headerContainer p {
     position: absolute;
     background-color: #ffffff60;
     border-radius: 5vh;
-    font-size: 16px;
+    font-size: 1rem;
     padding: 10px;
-    margin: 50px;
-    top: 110px;
-    left: 160px;
+    margin: 60px;
+    margin-left: 20%;
+    top: 40%;
+    right: 10%;
 }
 
 .contentContainer {
+    display: flex;
     position: absolute;
-    margin: 30px;
+    top: calc(200px + 18vw);
+    margin: 0 30px 30px 30px;
     height: auto;
-    top: 260px;
+    
 }
 
 .aboutMe {
     background-color: #ffffff60;
     box-shadow:  10px 10px 0px #77777750;
     border-radius: 30px;
+    font-size: 16px;
 }
 
 .aboutMe h1 {
     text-align: left;
-    font-size: 24px;
+    font-size: 1.5em;
     padding: 30px 0 0 30px;
     color: rgb(0, 0, 0);
 }
 
 .aboutMe p {
     text-align: justify;
-    font-size: 18px;
+    font-size: 1em;
     padding:  10px 60px 20px 60px;
     color: rgb(0, 0, 0);
+}
+
+.contentContainer h3 {
+    position: absolute;
+    background-color: #ffffff60;
+    border-radius: 10vh;
+    width: 100%;
+    text-align: right;
+    right: 10px;
+    bottom: -130px;
+    padding: 30px;
 }
