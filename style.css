@@ -121,14 +121,14 @@ body {
     padding: 10px;
     margin: 60px;
     margin-left: 20%;
-    top: 40%;
+    top: 35%;
     right: 10%;
 }
 
 .contentContainer {
     display: flex;
     position: absolute;
-    top: calc(200px + 18vw);
+    top: calc(230px + 18vw);
     margin: 0 30px 30px 30px;
     height: auto;
     
@@ -151,7 +151,7 @@ body {
 .aboutMe p {
     text-align: justify;
     font-size: 1em;
-    padding:  10px 60px 20px 60px;
+    padding:  10px 4vw 40px 4vw;
     color: rgb(0, 0, 0);
 }
 
